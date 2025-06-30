@@ -1,0 +1,15 @@
+containers: {
+  backend: {
+    build: {
+      context: "./backend"
+    }
+    ports: publish: "5000/http"
+  }
+
+  frontend: {
+    build: {
+      context: "./frontend"
+    }
+    ports: publish: "3000/http"
+  }
+}
